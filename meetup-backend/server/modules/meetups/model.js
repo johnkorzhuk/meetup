@@ -10,7 +10,10 @@ const MeetupSchema = new Schema({
   description: {
     type: String,
     required: true
+  },
+  eventDate: {
+    type: Date
   }
-})
+}, { timestamps: true })
 
 export default mongoose.model('Meetup', MeetupSchema)
